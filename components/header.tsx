@@ -8,7 +8,7 @@ import {
   IconGitHub,
   IconNextChat,
   IconSeparator,
-  IconVercel
+  IconVercel,
 } from '@/components/ui/icons'
 import { UserMenu } from '@/components/user-menu'
 import { SidebarMobile } from './sidebar-mobile'
@@ -61,10 +61,19 @@ export function Header() {
           rel="noopener noreferrer"
           className={cn(buttonVariants({ variant: 'outline' }))}
         >
+          <img src="./6.svg" />
+          <span className="hidden ml-2 md:flex">Oliver</span>
+        </a> 
+        {/* <a
+          target="_blank"
+          href="https://github.com/vercel/nextjs-ai-chatbot/"
+          rel="noopener noreferrer"
+          className={cn(buttonVariants({ variant: 'outline' }))}
+        >
           <IconGitHub />
           <span className="hidden ml-2 md:flex">GitHub</span>
-        </a>
-        <a
+        </a> */}
+        {/* <a
           href="https://github.com/vercel/nextjs-ai-chatbot/"
           target="_blank"
           className={cn(buttonVariants())}
@@ -72,7 +81,7 @@ export function Header() {
           <IconVercel className="mr-2" />
           <span className="hidden sm:block">Deploy to Vercel</span>
           <span className="sm:hidden">Deploy</span>
-        </a>
+        </a> */}
       </div>
     </header>
   )

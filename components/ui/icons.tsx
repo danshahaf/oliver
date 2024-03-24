@@ -1,8 +1,9 @@
 'use client'
 
 import * as React from 'react'
-
 import { cn } from '@/lib/utils'
+// import Image from 'next/image';
+
 
 function IconNextChat({
   className,
@@ -103,6 +104,7 @@ function IconOpenAI({ className, ...props }: React.ComponentProps<'svg'>) {
     </svg>
   )
 }
+
 
 function IconVercel({ className, ...props }: React.ComponentProps<'svg'>) {
   return (
@@ -503,5 +505,5 @@ export {
   IconShare,
   IconUsers,
   IconExternalLink,
-  IconChevronUpDown
+  IconChevronUpDown,
 }
